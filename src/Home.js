@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
   
-    const { error, isPending, data: cards } = useFetch('http://localhost:8000/cards')
+    const { error, isPending, data: cards } = useFetch('http://www.colourlovers.com/api/palettes/new?format=json')
 
   return (
     <div className="home">

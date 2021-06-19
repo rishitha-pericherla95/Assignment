@@ -9,15 +9,24 @@ const useFetch = (url) => {
     
 
     setTimeout(() => {
-      fetch(url)
+      fetch(url,{mode: 'no-cors',
+      method: "post",
+      headers: {
+           "Content-Type": "application/json",
+           "Access-Control-Allow-Origin" : "*"
+      }
+     })
       .then(res => {
-        if (!res.ok) { // error coming back from server
-          throw Error('could not fetch the data for that resource');
-        } 
-        console.log(res);
-        return res.json();
+        // if (!res.ok) { // error coming back from server
+        //   throw Error('errorr');
+        // } 
+        // const json_data =res.json();
+        // console.log("res",json_data);
+        // console.log(res)
+        return JSON.parse(res);
       })
       .then(data => {
+          console.log(data);
         setIsPending(false);
         setData(data);
         setError(null);
