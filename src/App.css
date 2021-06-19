@@ -1,38 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #92b6ff;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; 
+  align-items: center; 
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Lato', sans-serif; 
+  color: rgb(255, 255, 255);
+}
+.palette-list{
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.badge {
+  
 }
 
-.App-link {
-  color: #61dafb;
+.text {
+  float:left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image {
+  margin: 2px 0px 2px 0px;
+  float:right;
+}
+.card-preview{
+  height: 10rem;
+  width: 30rem;
+ 
+  padding: 10px 16px;
+  margin: 20px;
 }
