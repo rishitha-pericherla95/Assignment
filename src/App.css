@@ -9,24 +9,54 @@
   justify-content: center;
   font-family: 'Lato', sans-serif; 
   color: rgb(255, 255, 255);
+ 
+ 
 }
+
+ .heading {
+    font-size: 65px;
+  }
 .palette-list{
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
+  /* padding-left: 20rem; */
 }
 
 .text {
   float:left;
 }
 .image {
-  margin: 2px 0px 2px 0px;
+  margin: 25px 0px 2px 20px;
   float:right;
+  
 }
 .card-preview{
   height: 10rem;
-  width: 30rem;
+  width: 28rem;
  
   padding: 10px 16px;
   margin: 20px;
+}
+
+.badge{
+  width: fit-content;
+  border: 1px solid #51519b82;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #51519b82;
+}
+
+@media only screen and (max-width: 1000px) {
+  .rct-grid-row {
+    display: grid !important;
+  }
+
+}
+@media only screen  and (max-width: 530px) {
+.card-preview{
+    width: 100%;
+    padding: 0px;
+     margin: 0px;
+}
 }
